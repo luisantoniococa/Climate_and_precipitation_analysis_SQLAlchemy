@@ -146,9 +146,6 @@ def analysis_from_start(start):
 
         return jsonify(dates_list) 
 
-
-
-
 @app.route("/api/v1.0/<start>/<end>")
 def analysis_start_to_end(start, end):
 
