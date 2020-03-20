@@ -10,6 +10,9 @@ from flask import Flask, jsonify
 
 #import simplejson
 
+
+
+
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
 # reflect an existing database into a new model
