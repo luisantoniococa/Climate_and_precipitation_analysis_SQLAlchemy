@@ -27,6 +27,8 @@ session = Session(engine)
 
 app = Flask(__name__)
 
+# we created our first menu including the possible routes for the api
+
 @app.route("/")
 def welcome():
     """List all available api routes."""
