@@ -1,3 +1,4 @@
+# we get all our resources dependencies for the project
 import numpy as np
 
 import sqlalchemy
@@ -6,9 +7,10 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
+# we dont forget to include the flask and the jasonify 
 from flask import Flask, jsonify
 
-#import simplejson
+# initialize the engine and our connection to our sqlite
 
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
@@ -20,6 +22,7 @@ Base.prepare(engine, reflect=True)
 Measurement = Base.classes.measurement
 Station = Base.classes.station
 
+# We start our session and connection to the engine
 session = Session(engine)
 
 app = Flask(__name__)
@@ -62,7 +65,6 @@ def precipitations():
 def recent_precipitations():
     """Return a list of precipitation of the last 12 months"""
     # Query all countries
-    
 
     last_12months = dt.date(2017,8,23) - dt.timedelta(days=365)
 
