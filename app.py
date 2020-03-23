@@ -64,7 +64,8 @@ def precipitations():
         precipitations_list.append(precipitations_dict)
 
     return jsonify(precipitations_list)
-
+# based in the information of the api we called for data of the last 12 months.
+# we built the app so it provides that data in the rout recent.
 @app.route("/api/v1.0/precipitations/recent")
 def recent_precipitations():
     """Return a list of precipitation of the last 12 months"""
