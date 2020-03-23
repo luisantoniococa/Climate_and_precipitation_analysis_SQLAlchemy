@@ -46,6 +46,8 @@ def welcome():
 
     )
 
+# we create the outile for the precipitation api route 
+
 @app.route("/api/v1.0/precipitations")
 def precipitations():
     """Return a list of all precipitations"""
