@@ -1,31 +1,14 @@
-# Climate_and_precipitation_analysis_SQLAlchemy
-* This file goes further into the Analysis of weather precipitations in Hawaii
-* This analysis includes the use of pandas, SQLAlchemy, matplotlib
-# SQLAlchemy Homework - Surfs Up!
+# Climate and Precipitation analysis with SQLAlchemy
+### Summary 
+This project is analysis with Python and SQLAlchemy for data exploration for a climate database. All of the following analysis also includes, SQLite, SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
-### Before You Begin
+## Climate Analysis and Exploration
 
-1. Create a new repository for this project called `sqlalchemy-challenge`. **Do not add this homework to an existing repository**.
+We used Python and SQLAlchemy to do climate analysis and data exploration of the given climate database.
 
-2. Clone the new repository to your computer.
+* We selected a start date and end date for the trip.
 
-3. Add your Jupyter notebook and `app.py` to this folder. These will be the main scripts to run for analysis.
-
-4. Push the above changes to GitHub or GitLab.
-
-![surfs-up.png](Images/surfs-up.png)
-
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
-
-## Step 1 - Climate Analysis and Exploration
-
-To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
-
-* Use the provided [starter notebook](climate_starter.ipynb) and [hawaii.sqlite](Resources/hawaii.sqlite) files to complete your climate analysis and data exploration.
-
-* Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
-
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
+* We used SQLAlchemy `create_engine` to connect to your sqlite database.
 
 * Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
 
