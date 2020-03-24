@@ -4,13 +4,13 @@ This project is analysis with Python and SQLAlchemy for data exploration for a c
 
 ## Climate Analysis and Exploration
 
-We used Python and SQLAlchemy to do climate analysis and data exploration of the given climate database.
+I used Python and SQLAlchemy to do climate analysis and data exploration of the given climate database.
 
-* We selected a start date and end date for the trip.
+* I selected a start date and end date for the trip.
 
-* We used SQLAlchemy `create_engine` to connect to your sqlite database.
+* I used SQLAlchemy `create_engine` to connect to the sqlite database.
 
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
+* Used SQLAlchemy `automap_base()` to reflect tables into classes and saved a reference to those classes called `Station` and `Measurement`.
 
 ### Precipitation Analysis
 
