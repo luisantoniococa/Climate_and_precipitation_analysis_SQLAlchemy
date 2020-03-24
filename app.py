@@ -87,21 +87,22 @@ def recent_precipitations():
         precipitations_recent_list.append(precipitations_recent_dict)
 
     return jsonify(precipitations_recent_list)
-
+# we created the route for the stations data
 @app.route("/api/v1.0/stations")
 def stations_api():
-    
+    # creating the variable to hold the session and querying the respective data
     results_stations = session.query(Station.id,
        Station.station, 
        Station.name, 
       Station.latitude,
       Station.longitude,
       Station.elevation).all()
+    #   we make sure to close the session 
     session.close()
 
     # Convert list of tuples into normal list
     stations_all = list(np.ravel(results_stations))
-
+    # we return the data as a json file with the jsonify method
     return jsonify(stations_all)
 
 @app.route("/api/v1.0/tobs")
