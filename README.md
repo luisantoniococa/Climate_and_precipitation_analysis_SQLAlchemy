@@ -3,7 +3,7 @@
 This project has 2 parts. First an analysis with Python and SQLAlchemy for data exploration for a climate database. Second, an app that serves an api endpoint with data summaries. Additionaly it creates a search based in a selected date that returns a summary of temperatures for those dates by day.
 All of the following analysis also includes, SQLite, SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
-### Climate Analysis and Exploration
+### Climate/Precipitation Analysis and Exploration
 
 The first part of the project uses SQLAlchemy to create a connection (create_engine) to an sqlite database and perfrom queries to answer business questions.  
 
@@ -26,49 +26,14 @@ The first part of the project uses SQLAlchemy to create a connection (create_eng
 
 ![Temperatures recorded Histogram](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Temperature_frequency.png)
 
-### Precipitation Analysis
-
-* Design a query to retrieve the last 12 months of precipitation data.
-
-* Select only the `date` and `prcp` values.
-
-* Load the query results into a Pandas DataFrame and set the index to the date column.
-
-* Sort the DataFrame values by `date`.
-
-* Plot the results using the DataFrame `plot` method.
-
-  ![precipitation](Images/precipitation.png)
-
-* Use Pandas to print the summary statistics for the precipitation data.
-
-### Station Analysis
-
-* Design a query to calculate the total number of stations.
-
-* Design a query to find the most active stations.
-
-  * List the stations and observation counts in descending order.
-
-  * Which station has the highest number of observations?
-
-  * Hint: You may need to use functions such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
-
-* Design a query to retrieve the last 12 months of temperature observation data (tobs).
-
-  * Filter by the station with the highest number of observations.
-
-  * Plot the results as a histogram with `bins=12`.
-
-    ![station-histogram](Images/station-histogram.png)
-
 - - -
 
-## Step 2 - Climate App
+## Climate App / API server
 
-Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
+The climate Flask app serves API routes from the original sqlite database used. In a similar way connecting with SQLAlchemy in python uses SQL/ORM queries to serve the APIs based in the menu created. 
 
-* Use FLASK to create your routes.
+The following is an example of the connection to the app.py in port 5000 from a local machine. It shows a menu with the possible API calls. For calling sumarize temperature data by date we use the format YYYY-MM-DD
+
 
 ### Routes
 
