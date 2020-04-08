@@ -52,6 +52,7 @@ The following routes were created for the API response.
   * Converts the query results to a JSON representation of a Dictionary using `date` as the key and `prcp` as the value.
   
 ![API Recent](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/recent%20Precipitations.png)
+
 The figure above is an example of the an API call for the recent Precipitations, that includes precipitations a  year from the last data point.
 
 ---
@@ -75,8 +76,10 @@ The figure above is an example of the an API call for the recent Precipitations,
   * It uses the format YYYY-MM-DD for both dates search
 
 ![API Search by Date Start](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Precipitations%20by%20startdate.png)
+
 As explained above this uses the the start date for the api call and shows all the data points from that selected date.
 
 ![API Search by Date](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Precipitations%20between%20dates.png)
+
 We can see in orange the dates used in the api call for the start and in Purple for the end date, in this case we are obtaining 2 days total
 - - -
