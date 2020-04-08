@@ -1,16 +1,30 @@
 # Climate and Precipitation analysis with SQLAlchemy
-### Summary 
-This project is analysis with Python and SQLAlchemy for data exploration for a climate database. All of the following analysis also includes, SQLite, SQLAlchemy ORM queries, Pandas, and Matplotlib.
+### Overview 
+This project has 2 parts. First an analysis with Python and SQLAlchemy for data exploration for a climate database. Second, an app that serves an api endpoint with data summaries. Additionaly it creates a search based in a selected date that returns a summary of temperatures for those dates by day.
+All of the following analysis also includes, SQLite, SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
-## Climate Analysis and Exploration
+### Climate Analysis and Exploration
 
-I used Python and SQLAlchemy to do climate analysis and data exploration of the given climate database.
+The first part of the project uses SQLAlchemy to create a connection (create_engine) to an sqlite database and perfrom queries to answer business questions.  
 
-* I selected a start date and end date for the trip.
+#### This is the example of a query that answers a specific question in the notebook
 
-* I used SQLAlchemy `create_engine` to connect to the sqlite database.
++ What are the most active stations? (i.e. what stations have the most rows)? It showcase the stations in descending order
+![Station Example](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Descending%20order%20by%20station.png)
 
-* Used SQLAlchemy `automap_base()` to reflect tables into classes and saved a reference to those classes called `Station` and `Measurement`.
++ A query to get a summary of the temperature MIN, MAX, AVG and the station by date. 
+
+![Summary Examples](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Temperature%20avg%20max%20and%20min.png)
+
+#### The analysis also takes some of the created queries and plots the results
+
++ The plot shows the measured precipitation in the y axis and the dates in the x axis per day.
+
+![Precipitation per Date](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Precipitations.png)
+
++ The plot below shows an histogram with 12 bins for the temperatures frequency. It can be observed that the data is skewed rigth.
+
+![Temperatures recorded Histogram](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Temperature_frequency.png)
 
 ### Precipitation Analysis
 
