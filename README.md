@@ -30,12 +30,14 @@ The first part of the project uses SQLAlchemy to create a connection (create_eng
 
 ## Climate App / API server
 
-The climate Flask app serves API routes from the original sqlite database used. In a similar way connecting with SQLAlchemy in python uses SQL/ORM queries to serve the APIs based in the menu created. 
+The climate Flask app serves API JSON routes from the original sqlite database used. In a similar way connecting with SQLAlchemy in python uses SQL/ORM queries to serve the APIs based in the menu created. 
 
 The following is an example of the connection to the app.py in port 5000 from a local machine. It shows a menu with the possible API calls. For calling sumarize temperature data by date we use the format YYYY-MM-DD
 
 
 ### Routes
+
+![API Menu](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/port5000%20welcome.png)
 
 * `/`
 
@@ -65,11 +67,6 @@ The following is an example of the connection to the app.py in port 5000 from a 
 
   * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates between the start and end date inclusive.
 
-## Hints
-
-* You will need to join the station and measurement tables for some of the analysis queries.
-
-* Use Flask `jsonify` to convert your API data into a valid JSON response object.
 
 - - -
 
