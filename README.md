@@ -10,7 +10,7 @@ The first part of the project uses SQLAlchemy to create a connection (create_eng
 #### This is the example of a query that answers a specific question in the notebook
 
 + What are the most active stations? (i.e. what stations have the most rows)? It showcase the stations in descending order
-![Station Example](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Descending%20order%20by%20station.png)
+![Station Example](https://github.com/luisantoniococa/Climate_and_precipitation_analysis_SQLAlchemy/blob/master/Descending%20order%20by%20station.png =250x250)
 
 + A query to get a summary of the temperature MIN, MAX, AVG and the station by date. 
 
